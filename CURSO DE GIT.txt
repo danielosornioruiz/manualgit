@@ -86,6 +86,25 @@ git diff --staged
 	# te mostrara los cambios echos en el archivo
 
 
+# Ver los cambios echos en nuestro proyecto usando git log
+git log
+	# te muestra los cambios echos de una forma verbosa, extendida 
+git log --oneline
+	# te muesta cada cambio en una sola linea mostrandote el identificador y el comentario
 
 
+# Flujo para cuando hay mas de dos personas trabajando con el mismo proyecto
+# se ramifica el codigo
+# se modifica
+# se hacen los commit
+# se hace un merge a la rama principal 
+
+# mostrar el nombre de la rama en la cual estamos trabajando
+git branch 
+
+#  crear una ramificacion 
+git checkout -b <nombre>
+	# buenas practicas ejemplo
+git checkout -b features/nombre-de-la-funcionalidad
+git checkout -b <Ticket>
 
