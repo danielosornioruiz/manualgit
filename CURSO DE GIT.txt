@@ -15,3 +15,64 @@ git config --global -e
 git config --global core.autocrlf true
 ## usuario linux o mac  
 git config --global core.autocrlf input 
+
+
+
+# COMANDOS PARA PASAR A STAGE
+git status # para ver los cambios 
+gid add <nombre del archivo>
+git add . # incluye todos los archivos listados "es mala practica"
+# "gid add" admite expreciones regulares 
+id add *.txt
+
+# COMANDO PARA CONFIRMAR LOS CAMBIOS 
+git commit -m "<comentario haciendo referencia a los cambios realizados>" 
+git commit # esto abre el editr de codigo vscode y te permite insertar el comentario
+
+
+
+# EJEMPLO: ELIMINAR UN ARCHIVO -> pasarlo a STAGE y confirmar cambios con COMMIT
+rm <archivo>
+git status # confirmas la lista de archivos
+git add <archivo>
+git commit -m "Se elimino el <archivo> por...."
+
+# FORMA ACORTADA DE ELIMINAR UN ARCHIVO Y PASARLO A STAGE LISTO PARA COMMIT
+git rm <archivo>
+git commit -m "Se elimino el <archivo> por...."
+
+
+
+# RECUPERAR UN ARCHIVO ELIMINADO EN STAGE
+git restore --staged <archivo>
+	# restaurar en archivo a disco
+	git restore <archivo>
+
+
+# Cambiando el nombre de un archivo
+mv archivo1.txt archivo.txt
+git status
+	# debe aparecer dos cambios un delete y un nuevo archivo
+# se agregan ambos cambios
+git add archivo1.txt archivo.txt
+git status 
+	# te muestra ya en STAGE la accion "renamed"
+git commit -m "se renombro un archivo tal a tal"
+
+# Forma acortada y paso a STAGE
+git mv archivo.txt archivo1.txt
+
+
+# EXCLUYENDO ARCHIVOS A SEGUIR
+
+touch .gitignore
+	# dentro del archivo puedes incluir los nombres de archivos o la ruta de carpetas que no van a ser incluidas en git
+	ejemplo:
+	.env
+	temp/
+# El archivo .gitignore se debe incluir incluir a git para que forme parte del proyecto
+git add .gitignore
+git commit -m "Se agrega el archivo .gitignore"
+
+
+
