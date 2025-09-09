@@ -76,3 +76,16 @@ git commit -m "Se agrega el archivo .gitignore"
 
 
 
+
+# USANDO git diff
+	# modificas un archivo
+git diff
+	# te mostrara los cambios echos en el archivo
+# si agregar el cambio a STAGE para poder ver la diferencia se usa
+git diff --staged
+	# te mostrara los cambios echos en el archivo
+
+
+
+
+
