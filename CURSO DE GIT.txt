@@ -108,3 +108,13 @@ git checkout -b <nombre>
 git checkout -b features/nombre-de-la-funcionalidad
 git checkout -b <Ticket>
 
+	# al ejecutar el checkout te cambiara de rama
+
+# para regresar a la rama main
+git checkout main
+
+# agregar los cambios a main 
+	# DEBES ESTAR EN LA RAMA main PRA PODER INCLUIR LOS CAMBIOS DE LA <RAMAB>
+git merge <ramab>
+
+
