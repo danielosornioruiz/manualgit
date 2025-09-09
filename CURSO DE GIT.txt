@@ -1,0 +1,17 @@
+CURSO DE GIT
+
+# CONFIGURACION GLOBAL INICIAL 
+
+git config --global user.name "Daniel Osornio Ruiz"
+git config --global user.email daniel_osornio_cbt303@hotmail.com
+# inidicar el nombre "main" como la rama principal por defecto
+git config --global init.defaultBranch main
+# indicar a git VS code como editor por defecto
+git config --global core.editor "code --wait"
+# abrir el archivo de configuracion global para corroborar 
+git config --global -e 
+# configuracion para indicar el como debe ser tratados los saltos de linea
+## usuario windows  
+git config --global core.autocrlf true
+## usuario linux o mac  
+git config --global core.autocrlf input 
