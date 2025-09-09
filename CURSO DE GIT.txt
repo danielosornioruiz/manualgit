@@ -118,3 +118,26 @@ git checkout main
 git merge <ramab>
 
 
+# listar totas las ramas 
+git branch -a
+
+
+
+# subir el repositorio de git local a github
+
+#agregar "origen" despues de haber creado el reposito en github
+
+git remote add origin https://github.com/danielosornioruiz/manualgit.git
+
+# crear la rama main en el origen
+git push -u origin main
+	# al dar enter te pedira login, usuario + token
+
+# para el primer push 
+git push -u origin main
+
+#para los siguiente push
+
+git push 
+
+
